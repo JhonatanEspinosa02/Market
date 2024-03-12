@@ -9,7 +9,6 @@ const App = () => {
     <Promotion/>
     <Navigation/>
     <EatClean/>
-    <Button/>
     </>
   )
 }
