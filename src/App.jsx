@@ -1,7 +1,6 @@
 import Promotion from "./Components/Promotions";
 import Navigation from "./Components/Navigation";
 import EatClean from "./Components/EatClean";
-import Button from "./Components/Button";
 
 const App = () => {
   return (
@@ -9,7 +8,6 @@ const App = () => {
     <Promotion/>
     <Navigation/>
     <EatClean/>
-    <Button/>
     </>
   )
 }
