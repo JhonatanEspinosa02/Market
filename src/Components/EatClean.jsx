@@ -6,7 +6,7 @@ const EatClean = () => {
       className="h-auto p-5"
       style={{ backgroundColor: "#7AD063" }}
     >
-      <div className="grid grid-cols-2 items-center">
+      <div className="place-items-center sm:grid grid-cols-2">
         <div>
           <p className="text-white text-1xl leading-4 font-bold mb-5">Title heading of mall online</p>
 
@@ -21,7 +21,7 @@ const EatClean = () => {
         </div>
         
         <div className="relative inset-0 flex">
-          <img className="flex items-center animate-slideInRight"
+          <img className="hidden sm:flex items-center animate-slideInRight"
             srcSet="./public/images/saladMain-removebg-preview.png"
             alt="Image Salad"
           />
