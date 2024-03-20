@@ -2,6 +2,7 @@
 // import Navigation from "./Components/Navigation";
 // import EatClean from "./Components/EatClean";
 import Header from "./Components/Header"
+import SectionProductsTop from "./Components/SectionProducts/SectionProductsTop"
 import ShopCategory from "./Components/ShopByCate"
 import TopProducts from "./Components/TopProducts"
 
@@ -14,6 +15,7 @@ const App = () => {
     <Header/>
     <TopProducts/>
     <ShopCategory/>
+    <SectionProductsTop/>
     </>
   )
 }
