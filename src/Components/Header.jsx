@@ -18,7 +18,7 @@ export default function Header() {
                     <li><a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Options</a></li>
                     <li><a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Show All</a></li>
                 </ul>
-
+                
                 <ul className="flex mr-[55px] gap-2 items-center">
                     <li className="bg-white rounded-full p-1"><img className="h-[35px]" src="/src/assets/2301972.png" alt="AskQuestions" /></li>
                     <li className="bg-white rounded-full p-1"><img className="h-[35px]" src="/src/assets/3176101.png" alt="ReturnsAndOrders" /></li>
