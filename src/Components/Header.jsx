@@ -9,7 +9,36 @@ export default function Header() {
                     <p className="text-white bg-[#7AD063D6] px-2 font-semibold">15% off</p>
                 </div>
             </div>
-            <div className="bg-[#7AD063] flex justify-between pt-[65px] pb-4">
+
+            <div className="bg-[#7AD063] pt-16">
+                <nav className=" sm:flex justify-around ">
+                    <div className="">
+                        <a href="#" className="text-white text-xl flex items-center">XpressMarket</a>
+                    </div>
+                    <div className="flex gap-4">
+                        <a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Home</a>
+                        <a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Options</a>
+                        <a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Show All</a>
+                    </div>
+                    <div className="justify-col sm:flex justify-around gap-8">
+                        <a href="#">
+                            <img className="h-[35px]" src="/src/assets/2301972.png" alt="AskQuestions" />
+                        </a>
+                        <a href="#">
+                            <img className="h-[35px]" src="/src/assets/3176101.png" alt="ReturnsAndOrders" />
+                        </a>
+                        <a href="#">
+                            <img className="h-[35px]" src="/src/assets/7835563.png" alt="ShoppingCar" />
+                        </a>
+
+                    </div>
+                    <div>
+                        <a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Login</a>
+                    </div>
+                </nav>
+            </div>
+
+            {/* <div className="bg-[#7AD063] flex justify-between pt-[65px] pb-4 sm:grid-cols-2">
 
                 <p className="ml-[85px] text-white text-xl flex items-center">XpressMarket</p>
 
@@ -18,7 +47,7 @@ export default function Header() {
                     <li><a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Options</a></li>
                     <li><a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Show All</a></li>
                 </ul>
-                
+
                 <ul className="flex mr-[55px] gap-2 items-center">
                     <li className="bg-white rounded-full p-1"><img className="h-[35px]" src="/src/assets/2301972.png" alt="AskQuestions" /></li>
                     <li className="bg-white rounded-full p-1"><img className="h-[35px]" src="/src/assets/3176101.png" alt="ReturnsAndOrders" /></li>
@@ -27,7 +56,11 @@ export default function Header() {
                     <li><a className="text-white font-semibold text-lg hover:text-[#176027] ml-[15px]" href="#">Login</a></li>
                 </ul>
 
-            </div>
+            </div> */}
+
+
+
+
             <div
                 className="h-auto p-5"
                 style={{ backgroundColor: "#7AD063" }}
