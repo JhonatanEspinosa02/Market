@@ -2,8 +2,9 @@
 // import Navigation from "./Components/Navigation";
 // import EatClean from "./Components/EatClean";
 import Header from "./Components/Header"
-import ShopCategory from "./Components/ShopByCate"
 import TopProducts from "./Components/TopProducts"
+import ShopCategory from "./Components/ShopByCate"
+import Score from "./Components/Score"
 
 
 
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <TopProducts />
       <ShopCategory />
+      <Score/>
     </>
   )
 }

@@ -1,6 +1,6 @@
 export default function TopProducts() {
   return (
-    <div className="">
+    <>
       <div className="mt-8 text-center grid gap-2">
         <div className="grid sm:grid-cols-3 gap-5">
           <a href="">
@@ -56,6 +56,6 @@ export default function TopProducts() {
           </a>
         </div>
       </div>
-    </div>
+      </>
   );
 }
