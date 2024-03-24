@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#Cambios realizados
+-23/03/2024 - Se realizo diseño responsive de barra
