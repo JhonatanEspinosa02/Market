@@ -7,7 +7,6 @@ import ShopCategory from "./Components/ShopByCate"
 import Score from "./Components/Score"
 
 
-
 function App() {
   return (
     <>
