@@ -5,6 +5,7 @@ import Header from "./Components/Header"
 import TopProducts from "./Components/TopProducts"
 import ShopCategory from "./Components/ShopByCate"
 import Score from "./Components/Score"
+import News from "./Components/SectionNews"
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <TopProducts />
       <ShopCategory />
       <Score/>
+      <News/>
     </>
   )
 }
