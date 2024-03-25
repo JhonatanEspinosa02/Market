@@ -8,7 +8,6 @@ import Score from "./Components/Score"
 import News from "./Components/SectionNews"
 
 
-
 function App() {
   return (
     <>

@@ -1,181 +1,89 @@
 import { useState } from "react";
-import Button from "./Button";
-import close from "../assets/close.png";
-import menu from "../assets/menus.png";
-import navLinks from "../constants/links";
-import navLinksImg from "../constants/img";
+import Button from './Button';
+import { FaTimes } from "react-icons/fa";
+import {CiMenuFries} from 'react-icons/ci';
+import car from '../assets/car.png';
+import devolution from '../assets/devolution.png';
+import message from '../assets/message.png';
+
+
 
 export default function Header() {
+
+  const content = <>
+    <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-[#7ad063] transition">
+      <ul className="text-center text-xl p-20">
+
+        <a spy={true} smooth={true} href="#"><li className="my-2 py-2 hover:bg-[#5B994A] hover:rounded">Home</li></a>
+        <a spy={true} smooth={true} href="#"><li className="my-2 py-2  hover:bg-[#5B994A] hover:rounded">Options</li></a>
+        <a spy={true} smooth={true} href="#"><li className="my-2 py-2 hover:bg-[#5B994A] hover:rounded">Show All</li></a>
+        <a spy={true} smooth={true} href="#"><li className="my-2 py-2 hover:bg-[#5B994A] hover:rounded">Weeks Off</li></a>
+        <div className="flex justify-evenly pt-10">
+          <a className="bg-white rounded-full w-[70px] h-[70px] flex items-center justify-center" href="#"><img className="h-[40px]" src={car} alt="car" /></a>
+          <a href="#" className="bg-white rounded-full w-[70px] h-[70px] flex items-center justify-center"><img className="h-[40px]" src={devolution} alt="devolution" /></a>
+          <a href="#" className="bg-white rounded-full w-[70px] h-[70px] flex items-center justify-center"><img className="h-[40px]" src={message} alt="message" /></a>
+        </div>
+      </ul>
+    </div>
+  </>
+  
   const [toggle, setToggle] = useState(false);
+  const handleClick = () => setToggle(!toggle);
+  
 
   return (
     <>
-      <div className="bg-[#176027] flex p-3">
+       {/* <div className="bg-[#176027] flex p-3">
         <div className="flex items-center mx-auto">
           <p className="text-white mr-8 font-semibold">Weeks Off</p>
           <p className="text-white bg-[#7AD063D6] px-2 font-semibold">
             15% off
           </p>
         </div>
-      </div>
+      </div>   */}
 
-      <div className="bg-[rgb(122,208,99)] pt-16">
-        <nav className="">
-          <div className="flex items-center justify-around">
-            <div className="mx-14">
-              <a href="#" className="text-white text-xl flex items-center">
-                XpressMarket
-              </a>
-            </div>
-
-            <div className="sm:hidden m-[25px]">
-              <img
-                src={toggle ? close : menu}
-                alt="toogle"
-                className="w-[40px]"
-                onClick={() => setToggle((prev) => !prev)}
-              />
-            </div>
-            
-            <div className={`${toggle ? 'flex' : 'hidden'}  absolute bg-neutral-900 p-6 top-20`}>
-                <ul className="list-none flex flex-col justify-end items-center flex-1">
-                    {navLinks.map((nav, index) => (
-                        <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`}>
-                            <a href={`#${nav.id}`}> {nav.title}</a>
-                        </li>
-                    ))}
-                </ul>
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+      <nav className="bg-[#7ad063] pt-3">
+        <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 items-center">
+          <div className="flex items-center flex-1">
+            <span className="text-3xl font-bold">XpressMarket</span>
           </div>
+          <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
+            <div className="flex items-center flex-10">
 
-          <div className="flex max-sm:hidden">
-            <div className="justify-col sm:flex justify-around gap-8">
-              {navLinksImg.map((linkImg) => (
-                <div key={linkImg.id}>
-                  <a href="#">
-                    <img className="h-[42px]" src={linkImg.img} alt="img" />
-                  </a>
-                </div>
-              ))}
+
+              <ul className="flex gap-8 mr-16 text-[18px]">
+                <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl">Home</li></a>
+                <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl">Options</li></a>
+                <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl">Show All</li></a>
+              </ul>
+
+
+              <ul className="flex gap-5 px-10">
+               {/* <a className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center" href="#"><img className="h-   [20px]" src={car} alt="car" /></a> */}
+
+               <a href="#" className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center"><img className="h-[20px]" src={devolution} alt="devolution" /></a> 
+              <a href="#" className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center"><img className="h-[20px]" src={devolution} alt="devolution" /></a> 
+               <a href="#" className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center"><img className="h-[20px]" src={message} alt="message" /></a>
+              </ul> 
+
+
+              <ul>
+              <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl">Login</li></a>
+              </ul>
             </div>
-
-            <div className="flex gap-4">
-              {navLinks.map((nav, index) => (
-                <div
-                  key={nav.id}
-                  className={`${
-                    index === navLinks.length - 1 ? "mr-0" : "mr-10"
-                  } text-white`}
-                >
-                  <a
-                    className="text-white font-semibold text-lg hover:text-[#176027]"
-                    href={`#${nav.id}`}
-                  >
-                    {nav.title}
-                  </a>
-                </div>
-              ))}
-            </div>
-
-
-
-
           </div>
-        </nav>
-      </div>
+          <div>
+            {toggle && content}
+          </div>
+            <button className="block sm:hidden transition" onClick={handleClick}>
+              {toggle ? <FaTimes /> : <CiMenuFries/>}
+            </button> 
 
-      {/* <div className="flex justify-around max-sm:hidden">     
-                <div className="flex gap-4">
-                    <a
-                    className="text-white font-semibold text-lg hover:text-[#176027]"
-                    href="#"
-                    >
-                    Home
-                    </a>
-                    <a
-                    className="text-white font-semibold text-lg hover:text-[#176027]"
-                    href="#"
-                    >
-                    Options
-                    </a>
-                    <a
-                    className="text-white font-semibold text-lg hover:text-[#176027]"
-                    href="#"
-                    >
-                    Show All
-                    </a>
-                </div>
-                <div className="justify-col sm:flex justify-around gap-8">
-                     <a href="#">
-                        <img
-                        className="h-[35px]"
-                        src="/src/assets/2301972.png"
-                        alt="AskQuestions"
-                        />
-                    </a>
-                    <a href="#">
-                    <img
-                        className="h-[35px]"
-                        src="/src/assets/3176101.png"
-                        alt="ReturnsAndOrders"
-                    />
-                    </a>
-                    <a href="#">
-                    <img
-                        className="h-[35px]"
-                        src="/src/assets/7835563.png"
-                        alt="ShoppingCar"
-                        />
-                    </a>
-                </div>
-                <div>
-                    <a
-                    className="text-white font-semibold text-lg hover:text-[#176027]"
-                    href="#"
-                    >
-                    Login
-                    </a>
-                </div>
-            </div> */}
-
-      {/* <div className="bg-[#7AD063] flex justify-between pt-[65px] pb-4 sm:grid-cols-2">
-
-                <p className="ml-[85px] text-white text-xl flex items-center">XpressMarket</p>
-
-                <ul className="flex gap-6 items-center ml-[65px]">
-                    <li><a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Home</a></li>
-                    <li><a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Options</a></li>
-                    <li><a className="text-white font-semibold text-lg hover:text-[#176027]" href="#">Show All</a></li>
-                </ul>
-
-                <ul className="flex mr-[55px] gap-2 items-center">
-                    <li className="bg-white rounded-full p-1"><img className="h-[35px]" src="/src/assets/2301972.png" alt="AskQuestions" /></li>
-                    <li className="bg-white rounded-full p-1"><img className="h-[35px]" src="/src/assets/3176101.png" alt="ReturnsAndOrders" /></li>
-                    <li className="bg-white rounded-full p-1"><img className="h-[35px]" src="/src/assets/7835563.png" alt="ShoppingCar" /></li>
-
-                    <li><a className="text-white font-semibold text-lg hover:text-[#176027] ml-[15px]" href="#">Login</a></li>
-                </ul>
-
-            </div> */}
-
-      <div className="h-auto p-5" style={{ backgroundColor: "#7AD063" }}>
+        </div>
+      </nav>
+    
+       <div className="h-auto p-5" style={{ backgroundColor: "#7AD063" }}>
         <div className="place-items-center sm:grid grid-cols-2">
           <div>
             <p className="text-white text-1xl leading-4 font-bold mb-5">
