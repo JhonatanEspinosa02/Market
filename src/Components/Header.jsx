@@ -11,7 +11,7 @@ import message from '../assets/message.png';
 export default function Header() {
 
   const content = <>
-    <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-[#7ad063] transition">
+    <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-[#7ad063] transition z-40">
       <ul className="text-center text-xl p-20">
 
         <a spy={true} smooth={true} href="#"><li className="my-2 py-2 hover:bg-[#5B994A] hover:rounded">Home</li></a>
@@ -48,9 +48,8 @@ export default function Header() {
           <div className="flex items-center flex-1">
             <span className="text-3xl font-bold">XpressMarket</span>
           </div>
-          <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
+          <div className="lg:flex xl:flex xl:flex-1 items-center justify-end font-normal hidden">
             <div className="flex items-center flex-10">
-
 
               <ul className="flex gap-8 mr-16 text-[18px]">
                 <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl">Home</li></a>
@@ -76,7 +75,7 @@ export default function Header() {
           <div>
             {toggle && content}
           </div>
-            <button className="block sm:hidden transition" onClick={handleClick}>
+            <button className="block lg:hidden transition" onClick={handleClick}>
               {toggle ? <FaTimes /> : <CiMenuFries/>}
             </button> 
 
