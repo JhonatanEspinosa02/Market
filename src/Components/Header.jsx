@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from './Button';
 import { FaTimes } from "react-icons/fa";
 import {CiMenuFries} from 'react-icons/ci';
-import car from '../assets/car.png';
+import car from '../assets/6136460.png';
 import devolution from '../assets/devolution.png';
 import message from '../assets/message.png';
 
@@ -46,7 +46,7 @@ export default function Header() {
       <nav className="bg-[#7ad063] pt-3">
         <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 items-center">
           <div className="flex items-center flex-1">
-            <span className="text-3xl font-bold">XpressMarket</span>
+            <a href="#"><span className="text-3xl font-bold">XpressMarket</span></a>
           </div>
           <div className="lg:flex xl:flex xl:flex-1 items-center justify-end font-normal hidden">
             <div className="flex items-center flex-10">
@@ -59,9 +59,7 @@ export default function Header() {
 
 
               <ul className="flex gap-5 px-10">
-               {/* <a className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center" href="#"><img className="h-   [20px]" src={car} alt="car" /></a> */}
-
-               <a href="#" className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center"><img className="h-[20px]" src={devolution} alt="devolution" /></a> 
+               <a href="#" className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center "><img className="h-[20px]" src={car} alt="car" /></a> 
               <a href="#" className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center"><img className="h-[20px]" src={devolution} alt="devolution" /></a> 
                <a href="#" className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center"><img className="h-[20px]" src={message} alt="message" /></a>
               </ul> 
