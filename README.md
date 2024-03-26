@@ -13,7 +13,7 @@ Currently, two official plugins are available:
 -25/03/2024 - WeekOff Deleted due to errors in Header.
             - New Dependendencies to able to use icons.
             - Changes on header responsive code 
-            
+-26/03/2024 - Footer created (pending: change cards images)            
 
 
 
