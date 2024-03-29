@@ -16,7 +16,7 @@ export default function Header() {
 
         <a spy={true} smooth={true} href="#"><li className="my-2 py-2 hover:bg-[#5B994A] hover:rounded">Home</li></a>
         <a spy={true} smooth={true} href="#"><li className="my-2 py-2  hover:bg-[#5B994A] hover:rounded">Options</li></a>
-        <a spy={true} smooth={true} href="#"><li className="my-2 py-2 hover:bg-[#5B994A] hover:rounded">Show All</li></a>
+        <a spy={true} smooth={true} href="#"><li className="my-2 py-2 hover:bg-[#5B994A] hover:rounded">About Us</li></a>
         <a spy={true} smooth={true} href="#"><li className="my-2 py-2 hover:bg-[#5B994A] hover:rounded">Weeks Off</li></a>
         <div className="flex justify-evenly pt-10">
           <a className="bg-white rounded-full w-[70px] h-[70px] flex items-center justify-center" href="#"><img className="h-[40px]" src={car} alt="car" /></a>
@@ -54,7 +54,7 @@ export default function Header() {
               <ul className="flex gap-8 mr-16 text-[18px]">
                 <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl">Home</li></a>
                 <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl">Options</li></a>
-                <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl">Show All</li></a>
+                <a spy={true} smooth={true} href="<<History>>"><li className="hover:text-[#176027] cursor-pointer text-xl">About Us</li></a>
               </ul>
 
 
@@ -101,7 +101,7 @@ export default function Header() {
           <div className="relative inset-0 flex">
             <img
               className="hidden sm:flex items-center animate-slideInRight"
-              srcSet="./public/images/saladMain-removebg-preview.png"
+              srcSet="/public/images/saladMain-removebg-preview.png"
               alt="Image Salad"
             />
           </div>
