@@ -52,9 +52,9 @@ export default function Header() {
             <div className="flex items-center flex-10">
 
               <ul className="flex gap-8 mr-16 text-[18px]">
-                <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl">Home</li></a>
-                <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl">Options</li></a>
-                <a spy={true} smooth={true} href="<<History>>"><li className="hover:text-[#176027] cursor-pointer text-xl">About Us</li></a>
+                <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once ">Home</li></a>
+                <a spy={true} smooth={true} href="#"><li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once">Options</li></a>
+                <a spy={true} smooth={true} href="<<History>>"><li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once">About Us</li></a>
               </ul>
 
 

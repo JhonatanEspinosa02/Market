@@ -4,7 +4,7 @@ export default function News() {
             <div className="grid place-items-center gap-8 sm:grid-cols-2 p-4 sm:p-24">
                 <div>
                     <a href="">
-                        <img className="blur-sm hover:blur-none" src="/public/images/news/FullImg.jpeg" alt="Imagen Noticia 1" />
+                        <img className="blur-sm hover:blur-none animate-jump animate-once" src="/public/images/news/FullImg.jpeg" alt="Imagen Noticia 1" />
                     </a>
                 </div>
                 <div className="grid gap-8 sm:grid-cols-1">
