@@ -2,7 +2,28 @@
 export default {
     content: ["index.html", "./src/**/*.jsx"],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'coffee': "url('/src/assets/Coffee-PNG-HD.png')",
+                'groceries': "url('/src/assets/forest-fruits-png-vector-11546988735anc55iwlf6-removebg-preview.png')" ,
+                'bread': "url('/src/assets/stock-photo-bread-bakery-background-brown-and-white-wheat-grain-loaves-composition-removebg-preview.png')",
+                'quaker': "url('/src/assets/00750047802503L-removebg-preview.png')",
+                'salmon': "url('/src/assets/Salmon-Glaseado-con-Salsa-de-Naranja-removebg-preview.png')",
+                'serrano': "url('/src/assets/alimento-nutricienta-jamn-serrano-removebg-preview.png')"
+            },
+            backgroundSize: {
+                'auto': 'auto',
+                'cover': 'cover',
+                'contain': 'contain',
+            },
+            backgroundRepeat: {
+              'no-repeat': 'no-repeat',
+            },
+            backgroundPosition: {
+              'right': 'right center',
+              'left': 'left center' 
+            }
+        },
         theme: {
             screens: {
                 'sm': '640px',
