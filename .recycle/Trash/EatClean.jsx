@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "./../../src/Components/MarketComponentsNative/MarketButton/Button";
 
 const EatClean = () => {
   return (

@@ -1,12 +1,12 @@
 // import Promotion from "./Components/Promotions";
 // import Navigation from "./Components/Navigation";
 // import EatClean from "./Components/EatClean";
-import Header from "./Components/Header"
-import TopProducts from "./Components/TopProducts"
-import ShopCategory from "./Components/ShopByCate"
-import Score from "./Components/Score"
-import News from "./Components/SectionNews"
-import Footer from "./Components/Footer"
+import Header from "./Components/MarketComponentsNative/MarketHeader/Header"
+import TopProducts from "./Components/MarketComponentsNative/MarketProducts/TopProducts"
+import ShopCategory from "./Components/MarketComponentsNative//MarketShop/ShopByCate"
+import Score from "./Components/MarketComponentsNative/MarketScore/Score"
+import News from "./Components/MarketComponentsNative/MarketNews/SectionNews"
+import Footer from "./Components/MarketComponentsNative/MarketFooter/Footer"
 
 
 

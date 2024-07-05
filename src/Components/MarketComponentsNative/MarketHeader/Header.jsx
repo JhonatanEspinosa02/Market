@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Button from './Button';
+import Button from './../MarketButton/Button'
 import { FaTimes } from "react-icons/fa";
 import {CiMenuFries} from 'react-icons/ci';
-import car from '../assets/6136460.png';
-import devolution from '../assets/devolution.png';
-import message from '../assets/message.png';
+import car from './../../../assets/6136460.png';
+import devolution from './../../../assets/devolution.png';
+import message from './../../../assets/message.png';
 
 
 

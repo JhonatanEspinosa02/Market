@@ -1,6 +1,6 @@
-import apple from "../assets/download-on-the-app-store.png";
-import google from "../assets/google-play-badge.png";
-import masterCard from "../assets/mastercard-icon-1024x643-j3zb44jj.png";
+import apple from "./../../../assets/download-on-the-app-store.png";
+import google from "./../../../assets/google-play-badge.png";
+import masterCard from "./../../../assets/mastercard-icon-1024x643-j3zb44jj.png";
 
 
 function Footer() {
