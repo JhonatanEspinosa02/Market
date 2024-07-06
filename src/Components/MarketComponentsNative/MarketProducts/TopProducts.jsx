@@ -1,4 +1,4 @@
-import Button from './../MarketButton/Button';
+import Button from './../../MarketReutil/MarketButton/Button'
 
 export default function TopProducts() {
   return (
@@ -56,67 +56,6 @@ export default function TopProducts() {
               <Button/>
             </div>
           </div>
-
- 
-
- 
-
-          {/* <a href="">
-            <div
-              className="p-3 h-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-              style={{ backgroundColor: "#FAB5CB" }}
-            >
-              <p>Lunch in the Morning</p>
-            </div>
-          </a> */}
-
-          {/* <a href="">
-            <div
-              className="p-3 h-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-              style={{ backgroundColor: "#A9F6BA" }}
-            >
-              <p>Fruit in the Morning</p>
-            </div>
-          </a> */}
-
-
-
-
-         {/* <div className="grid sm:grid-cols-3 gap-5">
-          <a href="">
-            <div
-              className="p-3 h-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-              style={{ backgroundColor: "#B6F2A6" }}
-            >
-              <p>Coffe on Sundays</p>
-            </div>
-          </a>
-          <a href="">
-            <div
-              className="p-3 h-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-              style={{ backgroundColor: "#FAB5CB" }}
-            >
-              <p>Lunch in the Morning</p>
-            </div>
-          </a>
-          <a href="">
-            <div
-              className="p-3 h-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-              style={{ backgroundColor: "#A9F6BA" }}
-            >
-              <p>Fruit in the Morning</p>
-            </div>
-          </a> */}
-
-
-
-
-
-
-
-
-
-
         </div>
       </div>
       
