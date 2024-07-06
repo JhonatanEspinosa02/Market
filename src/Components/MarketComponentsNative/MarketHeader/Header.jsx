@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from './../MarketButton/Button'
+import Button from './../../MarketReutil/MarketButton/Button'
 import { FaTimes } from "react-icons/fa";
 import {CiMenuFries} from 'react-icons/ci';
 import car from './../../../assets/6136460.png';
@@ -33,16 +33,6 @@ export default function Header() {
 
   return (
     <>
-       {/* <div className="bg-[#176027] flex p-3">
-        <div className="flex items-center mx-auto">
-          <p className="text-white mr-8 font-semibold">Weeks Off</p>
-          <p className="text-white bg-[#7AD063D6] px-2 font-semibold">
-            15% off
-          </p>
-        </div>
-      </div>   */}
-
-    
       <nav className="bg-[#7ad063] pt-3">
         <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 items-center">
           <div className="flex items-center flex-1">
