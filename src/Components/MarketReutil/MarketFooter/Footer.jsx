@@ -1,9 +1,8 @@
 //Import library
-import LOCALES from "../../../../locales/locales_app";
+import { LOCALS_FOOTER } from './locals_footer';
 
 //Destructuring for better read in the code
-const { FOOTER, IMAGES } = LOCALES;
-
+const { FOOTER, IMAGES } = LOCALS_FOOTER;
 function Footer() {
   return (
     <footer>
