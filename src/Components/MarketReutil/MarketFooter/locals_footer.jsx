@@ -1,8 +1,8 @@
-import {appleImage, googleImage, masterCardImage} from '../../../../locales/imports_images'
+import {appleImage, googleImage, masterCardImage} from './../../../../locales/imports_images'
 
 export const LOCALS_FOOTER = {
 IMAGES: {
-  apple: {appleImage},
+  apple: appleImage,
   google: googleImage,
   masterCard: masterCardImage,
 },
