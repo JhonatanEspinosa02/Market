@@ -121,7 +121,6 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div class="border-t border-gray-500"></div>
       <div className=" bg-[#073912] p-5 lg:flex items-center justify-around">
         <p className="text-white font-semibold">
         {FOOTER.footerReservedRight}
