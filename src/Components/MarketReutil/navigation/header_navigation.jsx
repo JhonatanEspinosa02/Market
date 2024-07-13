@@ -1,7 +1,9 @@
 //Import Library
-import { LOCALS_NAVIGATION } from "../locales/locals_navigation";
+import { LOCALS_NAVIGATION } from "../../MarketComponentsNative/HEADER/MarketHeader/locales/locals_navigation";
 //Destructur in object
-const {IMAGES} = LOCALS_NAVIGATION;
+const {IMAGES,NAVIGATION} = LOCALS_NAVIGATION;
+const {homeNavigation, browseCategory, aboutUsNavigation, ordersNavigation, loginCustomer, loginSeller} = NAVIGATION
+
 export default function HeaderNavigation(){
   return(
     <>
@@ -17,17 +19,22 @@ export default function HeaderNavigation(){
               <ul className="flex gap-8 mr-16 text-[18px]">
                 <a href="#">
                   <li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once">
-                    Home
+                    {homeNavigation}
                   </li>
                 </a>
                 <a href="#">
                   <li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once">
-                    Options
+                    {browseCategory}
                   </li>
                 </a>
                 <a href="<<History>>">
                   <li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once">
-                    About Us
+                    {ordersNavigation}
+                  </li>
+                </a>
+                <a href="<<History>>">
+                  <li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once">
+                    {aboutUsNavigation}
                   </li>
                 </a>
               </ul>
@@ -44,16 +51,6 @@ export default function HeaderNavigation(){
                 >
                   <img
                     className="h-[20px]"
-                    src={IMAGES.devolutionIcon}
-                    alt="devolution"
-                  />
-                </a>
-                <a
-                  href="#"
-                  className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center"
-                >
-                  <img
-                    className="h-[20px]"
                     src={IMAGES.messageIcon}
                     alt="message"
                   />
@@ -62,7 +59,12 @@ export default function HeaderNavigation(){
               <ul>
                 <a href="#">
                   <li className="hover:text-[#176027] cursor-pointer text-xl">
-                    Login
+                  {loginSeller}
+                  </li>
+                </a>
+                <a href="">
+                <li className="hover:text-[#176027] cursor-pointer text-xl">
+                  {loginCustomer}
                   </li>
                 </a>
               </ul>

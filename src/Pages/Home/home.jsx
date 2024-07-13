@@ -1,9 +1,9 @@
 //Import Components
 import Header from "../../Components/MarketComponentsNative/HEADER/MarketHeader/Header";
-import TopProducts from "../../Components/MarketComponentsNative/HEADER/MarketProducts/TopProducts";
-import ShopCategory from "../../Components/MarketComponentsNative/HEADER/MarketShop/ShopByCate";
+import TopProducts from "../../Components/MarketComponentsNative/HEADER/CategoryProducts/CategoryProducts"
+import ShopCategory from "../../Components/MarketComponentsNative/HEADER/ProductsByCategory/ProductsByCategory";
 import Score from "../../Components/MarketComponentsNative/HEADER/MarketScore/Score";
-import News from "../../Components/MarketComponentsNative/HEADER/MarketNews/SectionNews";
+import News from "../../Components/MarketReutil/SectionNews/SectionNews";
 import Footer from "../../Components/MarketReutil/MarketFooter/Footer";
 
 import './home_styles.css'
