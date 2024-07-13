@@ -1,4 +1,5 @@
 //Import Library
+import { Outlet, Link } from "react-router-dom";
 import { LOCALS_NAVIGATION } from "../../MarketComponentsNative/HEADER/MarketHeader/locales/locals_navigation";
 //Destructur in object
 const {IMAGES,NAVIGATION} = LOCALS_NAVIGATION;
@@ -10,43 +11,43 @@ export default function HeaderNavigation(){
     <nav className="bg-[#7ad063] pt-3">
         <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 items-center">
           <div className="flex items-center flex-1">
-            <a href="#">
+            <a to="/home">
               <span className="text-3xl font-bold">XpressMarket</span>
             </a>
           </div>
           <div className="lg:flex xl:flex xl:flex-1 items-center justify-end font-normal hidden">
             <div className="flex items-center flex-10">
               <ul className="flex gap-8 mr-16 text-[18px]">
-                <a href="#">
+                <Link to="/home">
                   <li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once">
                     {homeNavigation}
                   </li>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/browse">
                   <li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once">
                     {browseCategory}
                   </li>
-                </a>
-                <a href="<<History>>">
+                </Link>
+                <Link to="/orders">
                   <li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once">
                     {ordersNavigation}
                   </li>
-                </a>
-                <a href="<<History>>">
+                </Link>
+                <Link to="/about">
                   <li className="hover:text-[#176027] cursor-pointer text-xl animate-jump animate-once">
                     {aboutUsNavigation}
                   </li>
-                </a>
+                </Link>
               </ul>
               <ul className="flex gap-5 px-10">
-                <a
-                  href="#"
+                <Link
+                  to="/carShop"
                   className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center"
                 >
                   <img className="h-[20px]" src={IMAGES.carIcon} alt="car" />
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/messages"
                   className="bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center"
                 >
                   <img
@@ -54,24 +55,25 @@ export default function HeaderNavigation(){
                     src={IMAGES.messageIcon}
                     alt="message"
                   />
-                </a>
+                </Link>
               </ul>
               <ul>
-                <a href="#">
+                <Link to="/loginSeller">
                   <li className="hover:text-[#176027] cursor-pointer text-xl">
                   {loginSeller}
                   </li>
-                </a>
-                <a href="">
+                </Link>
+                <Link href="/loginCustomer">
                 <li className="hover:text-[#176027] cursor-pointer text-xl">
                   {loginCustomer}
                   </li>
-                </a>
+                </Link>
               </ul>
             </div>
           </div>
         </div>
       </nav>
+      <Outlet></Outlet>
     </>
   )
 
