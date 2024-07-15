@@ -1,7 +1,9 @@
-export default function Presentation(){
+export default function PresentationPageMain(){
     return(
         <>
-        <h1>Desde la presentacion principañ</h1>
+        <div className="p-56 text-center">
+            Aqui se mostrar informacion relevante de la tienda
+        </div>
         </>
     )
 }
