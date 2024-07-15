@@ -1,6 +1,7 @@
 //Import Library
 import { Outlet, Link } from "react-router-dom";
 import { LOCALS_NAVIGATION } from "../../MarketComponentsNative/HEADER/MarketHeader/locales/locals_navigation";
+import PresentationPageMain from "../../../Pages/PresentationPage/Presentation";
 //Destructur in object
 const {IMAGES,NAVIGATION} = LOCALS_NAVIGATION;
 const {homeNavigation, browseCategory, aboutUsNavigation, ordersNavigation, loginCustomer, loginSeller} = NAVIGATION
@@ -11,9 +12,9 @@ export default function HeaderNavigation(){
     <nav className="bg-[#7ad063] pt-3">
         <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 items-center">
           <div className="flex items-center flex-1">
-            <a to="/home">
+            <Link to="/">
               <span className="text-3xl font-bold">XpressMarket</span>
-            </a>
+            </Link>
           </div>
           <div className="lg:flex xl:flex xl:flex-1 items-center justify-end font-normal hidden">
             <div className="flex items-center flex-10">
@@ -58,12 +59,12 @@ export default function HeaderNavigation(){
                 </Link>
               </ul>
               <ul>
-                <Link to="/loginSeller">
+                <Link to="/seller-login">
                   <li className="hover:text-[#176027] cursor-pointer text-xl">
                   {loginSeller}
                   </li>
                 </Link>
-                <Link href="/loginCustomer">
+                <Link to="/customer-login">
                 <li className="hover:text-[#176027] cursor-pointer text-xl">
                   {loginCustomer}
                   </li>
