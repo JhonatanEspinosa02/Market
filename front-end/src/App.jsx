@@ -6,10 +6,10 @@ import HeaderNavigation from "./Components/MarketReutil/navigation/header_naviga
 import { About } from "./Pages/About/about";
 import { Browse } from "./Pages/Browse/browse";
 import { Home } from "./Pages/Home/home";
-import PresentationPageMain from "./Pages/PresentationPage/Presentation";
 import OrdersUser from "./Pages/Orders/orders";
 import CustomerLogin from "./Pages/Auth/LoginCustomer/customer";
 import SellerLogin from "./Pages/Auth/LoginSeller/seller";
+import PresentationMainPage from "./Pages/PresentationPage/presentation"
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       {/* By default the navigation here */}
       <Routes>
         <Route path="/" element={<HeaderNavigation></HeaderNavigation>}>
-        <Route path="/" element={<PresentationPageMain></PresentationPageMain>}></Route>
+          <Route path="/" element={<PresentationMainPage></PresentationMainPage>}></Route>
           <Route path="/home" element={<Home></Home>}></Route>
           <Route path="/orders" element={<OrdersUser></OrdersUser>}></Route>
           <Route path="/browse" element={<Browse></Browse>}></Route>

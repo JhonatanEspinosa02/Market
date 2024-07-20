@@ -1,8 +1,8 @@
 //Import Library
 import { Outlet, Link } from "react-router-dom";
 import { LOCALS_NAVIGATION } from "../../MarketComponentsNative/HEADER/MarketHeader/locales/locals_navigation";
-import PresentationPageMain from "../../../Pages/PresentationPage/Presentation";
-//Destructur in object
+
+//Destructuring in object
 const {IMAGES,NAVIGATION} = LOCALS_NAVIGATION;
 const {homeNavigation, browseCategory, aboutUsNavigation, ordersNavigation, loginCustomer, loginSeller} = NAVIGATION
 
