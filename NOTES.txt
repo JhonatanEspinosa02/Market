@@ -1,0 +1,18 @@
+This script only run if the front and back are config in diferents ports
+
+
+npm install --save-dev concurrently
+
+
+{
+  "name": "mi-proyecto",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && node src/app.js"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
