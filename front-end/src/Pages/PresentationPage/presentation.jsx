@@ -1,9 +1,14 @@
+import Input from "./inputLocation/input_location";
+import MostRequested from "./mostRequested/mostRequested";
+import InfoApp from "./infoApp/infoApp"
+import './styles.css'
+
 export default function PresentationPageMain(){
     return(
         <>
-        <div className="p-56 text-center">
-            Aqui se mostrar informacion relevante de la tienda
-        </div>
+            <Input></Input>
+            <MostRequested></MostRequested>
+            <InfoApp></InfoApp>
         </>
     )
 }
