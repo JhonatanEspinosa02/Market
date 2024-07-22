@@ -1,0 +1,41 @@
+.bigSpan {
+  padding: 20rem;
+  line-height: 1.3rem;
+}
+
+.contain-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  color: white;
+}
+.cards {
+  border-radius: 1cqmin;
+  text-align: center;
+  padding: 5rem 0;
+  background-color: #2b8512;
+}
+.cards:hover {
+  background-image: url(https://i.pinimg.com/originals/b4/f2/de/b4f2de5d16d04bb48f728a7f3ab3e543.gif);
+  background-size: cover;
+  background-position: center;
+}
+.cards-download {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  text-align: center;
+}
+.card-download{
+    padding: 5rem 0;
+}
+.card-download-playstore:hover{
+    background-image: url(https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_playstore_google-512.png);
+    background-position: center;
+    background-size: cover;
+}
+.card-download-applestore:hover{
+    background-image: url(https://p7.hiclipart.com/preview/427/167/657/macintosh-apple-logo-scalable-vector-graphics-free-download-of-ios-icon-clipart.jpg);
+    background-position: center;
+    background-size: cover;
+}
