@@ -6,8 +6,6 @@ import Score from "../../Components/MarketComponentsNative/HEADER/MarketScore/Sc
 import News from "../../Components/MarketReutil/SectionNews/SectionNews";
 import Footer from "../../Components/MarketReutil/MarketFooter/Footer";
 
-import './home_styles.css'
-
 export function Home() {
   return (
     <>
