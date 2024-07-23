@@ -1,9 +1,9 @@
 //Import library
-import { LOCALS_FOOTER } from './locals_footer';
+import { LOCALS_FOOTER } from "./locals_footer";
 
 //Destructuring for better read in the code
 const { FOOTER, IMAGES } = LOCALS_FOOTER;
-function Footer() {
+export default function Footer() {
   return (
     <footer>
       <div className="flex-row bg-[#073912] p-10 lg:flex justify-between">
@@ -51,7 +51,9 @@ function Footer() {
             </ul>
           </div>
           <div className="lg:mr-10">
-            <h2 className="text-white font-bold text-xl mb-3 mt-10">{FOOTER.footerSupport}</h2>
+            <h2 className="text-white font-bold text-xl mb-3 mt-10">
+              {FOOTER.footerSupport}
+            </h2>
             <ul>
               <a
                 className="text-white font-semibold hover:text-zinc-400"
@@ -74,7 +76,9 @@ function Footer() {
             </ul>
           </div>
           <div className="lg:mr-10">
-            <h2 className="text-white font-bold text-xl mb-3 mt-10">{FOOTER.footerCompany}</h2>
+            <h2 className="text-white font-bold text-xl mb-3 mt-10">
+              {FOOTER.footerCompany}
+            </h2>
             <ul>
               <a
                 className="text-white font-semibold hover:text-zinc-400"
@@ -97,7 +101,9 @@ function Footer() {
             </ul>
           </div>
           <div className="lg:mr-10">
-            <h2 className="text-white font-bold text-xl mb-3 mt-10">{FOOTER.footerSocialMedia}</h2>
+            <h2 className="text-white font-bold text-xl mb-3 mt-10">
+              {FOOTER.footerSocialMedia}
+            </h2>
             <ul>
               <a
                 className="text-white font-semibold hover:text-zinc-400"
@@ -122,9 +128,7 @@ function Footer() {
         </div>
       </div>
       <div className=" bg-[#073912] p-5 lg:flex items-center justify-around">
-        <p className="text-white font-semibold">
-        {FOOTER.footerReservedRight}
-        </p>
+        <p className="text-white font-semibold">{FOOTER.footerReservedRight}</p>
 
         <div className="flex-row sm:flex justify-center gap-5">
           <img
@@ -152,5 +156,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;
